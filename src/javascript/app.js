@@ -3,11 +3,12 @@ Ext.define('CustomApp', {
     componentCls: 'app',
     logger: new Rally.technicalservices.Logger(),
     items: [
-        {xtype:'container',itemId:'outer_box', margin: 10, layout: { type:'hbox' }, items: [
+        {xtype:'container',itemId:'outer_box', margin: '10 25 10 10', layout: { type:'hbox' }, items: [
             {xtype:'container',itemId: 'filler', flex: 1},
-            {xtype:'container',itemId:'selector_box', margin: 10 }
+            {xtype:'container',itemId:'selector_box' },
+            {xtype:'container', itemId: 'right-filler', width: 15 }
         ]},
-        {xtype:'container',itemId:'display_box', margin: 5},
+        {xtype:'container',itemId:'display_box', margin: '10 25 10 10', },
         {xtype:'tsinfolink'}
     ],
     launch: function() {

@@ -3,11 +3,11 @@
 <head>
     <title>PI Estimation</title>
     <!--  (c) 2014 Rally Software Development Corp.  All Rights Reserved. -->
-    <!--  Build Date: Sat Dec 13 2014 20:36:10 GMT-0800 (PST) -->
+    <!--  Build Date: Sat Dec 13 2014 20:44:07 GMT-0800 (PST) -->
     
     <script type="text/javascript">
-        var APP_BUILD_DATE = "Sat Dec 13 2014 20:36:10 GMT-0800 (PST)";
-        var CHECKSUM = 1558386582;
+        var APP_BUILD_DATE = "Sat Dec 13 2014 20:44:07 GMT-0800 (PST)";
+        var CHECKSUM = 1583912827;
     </script>
     
     <script type="text/javascript" src="/apps/2.0rc3/sdk.js"></script>
@@ -187,11 +187,12 @@ Ext.define('CustomApp', {
     componentCls: 'app',
     logger: new Rally.technicalservices.Logger(),
     items: [
-        {xtype:'container',itemId:'outer_box', margin: 10, layout: { type:'hbox' }, items: [
+        {xtype:'container',itemId:'outer_box', margin: '10 25 10 10', layout: { type:'hbox' }, items: [
             {xtype:'container',itemId: 'filler', flex: 1},
-            {xtype:'container',itemId:'selector_box', margin: 10 }
+            {xtype:'container',itemId:'selector_box' },
+            {xtype:'container', itemId: 'right-filler', width: 15 }
         ]},
-        {xtype:'container',itemId:'display_box', margin: 5},
+        {xtype:'container',itemId:'display_box', margin: '10 25 10 10', },
         {xtype:'tsinfolink'}
     ],
     launch: function() {
